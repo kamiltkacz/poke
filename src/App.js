@@ -1,22 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './Styles.css';
+import Blah from "./GetPokemon.js";
+import NameForm from "./Input.js";
+import GetPoki from "./GetPoki.js";
+import MyComponent from './hooksPoki.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="Header-poke">Pokedex</div>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         Name or Number.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NameForm />
+
+        <Blah />
+
+        <MyComponent />
+
+        <GetPoki />
+
       </header>
     </div>
   );
