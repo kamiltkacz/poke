@@ -1,20 +1,11 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,29 +13,122 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  min-width: 111vw;
 }
 
 .Header-poke {
+  background: linear-gradient(62deg, #f0f0 0%, #f7ce68 100%);
 
-  background-color: white;
   color: black;
   width: 100%;
   text-align: left;
+  padding: 17px 0px 21px 0px;
+  margin-bottom: -13px;
+  font-size: 3rem;
+  opacity: 0.5;
+  font-weight: 500;
+}
 
-  padding-left: 130px;
+.info-div {
+  background: linear-gradient(62deg, #f0f0 0%, #f7ce68 100%);
+}
 
+.search-div {
+  background-image: linear-gradient(310deg, #363627 0%, #33312b 100%);
+  flex: 1 1;
+  width: 100%;
+  margin-top: 13px;
+}
 
+.search-text {
+  flex: 2 1;
+  color: whitesmoke;
+  text-align: left;
+  padding-left: 34px;
+  margin-bottom: -97px;
+  font-size: 2.5rem;
+}
+
+.title-span {
+  line-height: 20%;
+  padding-left: 34px;
+}
+
+.svg-div {
+  background: #f35900;
+  width: 10%;
+  margin-left: -46px;
+  z-index: 100;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.img-div {
+  background: whitesmoke;
+  width: 20vw;
+  height: 18vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transform: scale(1.06);
+}
+
+.num-div {
+  text-align: left;
+  margin-top: -18px;
+  padding-bottom: 17px;
+  background: white;
+  width: 39%;
+  z-index: 99999;
+  position: relative;
+
+  transform: rotateX(27deg);
+  clip-path: polygon(0 0, 89% 0, 100% 76%, 0 63%);
+}
+
+.type-div {
+  display: flex;
+
+  padding-bottom: 50px;
+}
+
+.type-one {
+  background: orange;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 1px;
+}
+
+.type-two {
+  background: violet;
+  border-radius: 5px;
+  font-size: 1.5rem;
+
+  margin: 1px;
+  line-height: 1.5;
+
+  margin-left: 4px;
+  position: relative;
+}
+
+.name-span {
+  display: flex;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.wrapper-div {
+  width: 120%;
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
 }
