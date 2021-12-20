@@ -1,25 +1,33 @@
 
+
+
 import './Styles.css';
-import Blah from "./GetPokemon.js";
-import NameForm from "./Input.js";
-import GetPoki from "./GetPoki.js";
-import MyComponent from './hooksPoki.js';
+import Pokes from "./GetPokemon.js";
+//  import NameForm from "./Input.js";
+
+ import SearchBar from "./Components/SearchBar";
+import BookData from "./Data.json";
+// import GetPoki from "./GetPoki.js";
+// import MyComponent from './hooksPoki.js';
+
+
+
+
+
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
         <div className="Header-poke">Pokedex</div>
-        <p>
-         Name or Number.
-        </p>
-        <NameForm />
 
-        <Blah />
+        <SearchBar placeholder="Enter a Book Name..." data={BookData} />
 
-        <MyComponent />
+        {/* <NameForm /> */}
 
-        <GetPoki />
+
+        <Pokes />
 
       </header>
     </div>

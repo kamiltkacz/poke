@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.Header-poke {
+
+  background-color: white;
+  color: black;
+  width: 100%;
+  text-align: left;
+
+  padding-left: 130px;
+
+
+}

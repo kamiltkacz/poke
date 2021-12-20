@@ -1,39 +1,43 @@
-import React,{useState,useEffect} from 'react';
-// import './App.css';
+// import React,{useState,useEffect} from 'react';
+// // import './App.css';
 
-function GetPoki() {
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('data.json'
-    ,{
-      headers : {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        setData(myJson)
-      });
-  }
-  useEffect(()=>{
-    getData()
-  },[])
-  return (
+// function GetPoki() {
+//   const [data,setData]=useState([]);
+//   const getData=()=>{
+//     fetch('data.json'
+//     ,{
+//       headers : {
+//         'Content-Type': 'application/json',
+//         'Accept': 'application/json'
+//        }
+//     }
+//     )
+//       .then(function(response){
+//         console.log(response)
+//         return response.json();
+//       })
+//       .then(function(myJson) {
+//         console.log(myJson);
+//         setData(myJson)
+//       });
+//   }
+//   useEffect(()=>{
+//     getData()
+//   },[])
 
-    <div className="GetPokiDiv">
-      <p className='pudding'>Here goes the data</p>
-     {
-       data && data.length>0 && data.map((item)=><p>{item.about}</p>)
-     }
 
-    </div>
-  );
-}
 
-export default GetPoki;
+
+//   return (
+
+//     <div className="GetPokiDiv">
+//       <p className='pudding'>Here goes the data</p>
+
+
+
+
+//     </div>
+//   );
+// }
+
+// export default GetPoki;
