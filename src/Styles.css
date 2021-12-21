@@ -173,11 +173,125 @@ input:focus {
   padding-bottom: 30px;
 }
 
+.dataResult {
+  margin-top: 5px;
+  width: 300px;
+  height: 170px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border-radius: 8px;
+  z-index: 11111;
+  position: relative;
+  flex-wrap: wrap;
+
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataItem p {
+  margin-left: 10px;
+}
+
+
+/* End Serach Input */
+
 #loop-svg {
   width: 5%;
   margin-left: 34px;
   z-index: 200;
   cursor: pointer;
+}
+
+.dataResultTwo {
+  margin-top: 5px;
+  width: 300px;
+  height: 170px;
+  background-color: aliceblue;
+  box-shadow: rgb(255 0 21 / 82%) 0px 5px 116px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-left: -60px;
+  z-index: 999999;
+  animation: wiggle 0.5s;
+  animation-iteration-count: 6;
+
+}
+
+.dataResultTwo::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+
+@media (max-width: 915px) {
+  svg {
+    display: none;
+  }
+  #loop-svg {
+    display: none;
+  }
+  .svg-div {
+    display: none;
+  }
+
+  .dataResult {
+    animation: wiggle 0.5s;
+    animation-iteration-count: 6;
+  }
 }
 
 @media (max-width: 600px) {
@@ -212,5 +326,28 @@ input:focus {
   #loop-svg {
     margin-right: -34px;
     width: 13%;
+  }
+
+  .dataResult {
+    display: flex;
+    position: absolute;
+    margin-left: -297px;
+    margin-top: 220px;
+    animation: wiggle 0.5s;
+    animation-iteration-count: 6;
+  }
+
+  svg {
+    display: none;
+  }
+  #loop-svg {
+    display: none;
+  }
+  .svg-div {
+    display: none;
+  }
+
+  .search input {
+    margin-left: 30px;
   }
 }
