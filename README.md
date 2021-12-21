@@ -8,6 +8,5 @@ Este é um desafio de front-end para levar para casa para Novatics.
 * Tentei manter o código limpo e nomear os elementos HTML em uma sequência lógica - primeiro o que os elementos contêm, depois o que os elementos são. Ex. "svg-div"
 * Iniciei o aplicativo com o Heroku.
 
-Problemas
-* A função de pesquisa (em searchBar.js) registra no console (array - NewFilter), mas não foi capaz de exibi-lo.
+Problemas.
 * O div "type-two" não tem "padding" devido a ser exibido onde não deveria. Não consigo fazer funcionar uma função que adicionaria preenchimento dinamicamente e também mudaria uma cor quando o "type of weakness" do pokemos mudar.
