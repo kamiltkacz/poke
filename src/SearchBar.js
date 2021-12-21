@@ -67,6 +67,17 @@ function SearchBar({ placeholder }) {
             ></path>
           </svg>
           <div className="svg-div" onClick={checkConsole}></div>
+          {filteredData.length !== 0 && (
+        <div className="dataResult">
+          {filteredData.slice(0, 15).map((value, key) => {
+            return (
+              <a className="dataItem" href={value.name} target="_blank" alt="">
+                <p>{value.name} </p>
+              </a>
+            );
+          })}
+        </div>
+      )}
         </div>
       </div>
     </div>
