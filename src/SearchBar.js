@@ -57,12 +57,8 @@ function SearchBar({ placeholder }) {
   const [style, setStyle] = useState("");
 
   const changeStyle = () => {
-
-
     setStyle("dataResultTwo");
   };
-
-
 
   return (
     <div className="search-div">
@@ -98,62 +94,39 @@ function SearchBar({ placeholder }) {
             ></path>
           </svg>
           <div className="svg-div" onClick={changeStyle}></div>
-        </div>  {/* search inputs end */}
-
-
-          {filteredData.length !== 0 && (
-            <div className={style}>
-            <div className="dataResult" >
+        </div>{" "}
+        {/* search inputs end */}
+        {filteredData.length !== 0 && (
+          <div className={style}>
+            <div className="dataResult">
               {filteredData.slice(0, 15).map((value) => {
                 return (
-                  // <a
-                  //   className="dataItem"
-                  //   href={value.name}
-                  //   target="_blank"
-                  //   alt=""
-                  // >
                   <div className="dataItem">
-
-                  <p>{value.num}</p>
-                   <img src={value.img} alt="" />
-                  <p className="name-par">{value.name}</p>
+                    <p>{value.num}</p>
+                    <img src={value.img} alt="" />
+                    <p className="name-par">{value.name}</p>
                   </div>
                   // </a>
                 );
               })}
             </div>
-            </div>
-          )}
-          {filteredDataNum.length !== 0 && (
-             <div className={style}>
+          </div>
+        )}
+        {filteredDataNum.length !== 0 && (
+          <div className={style}>
             <div className="dataResult">
               {filteredDataNum.slice(0, 10).map((value) => {
                 return (
-                  // <a
-                  //   className="dataItem"
-                  //   href={value.num}
-                  //   target="_blank"
-                  //   alt=""
-                  // >  {/* </a> */}
-
                   <div className="dataItem">
-                  <p>{value.num}</p>
-                   <img src={value.img} alt=""  />
-                  <p>{value.name}</p>
-                    </div>
-
+                    <p>{value.num}</p>
+                    <img src={value.img} alt="" />
+                    <p>{value.name}</p>
+                  </div>
                 );
               })}
-              </div>
             </div>
-          )}
-         {/* <div className={style}>
-
-           </div> */}
-
-
-
-
+          </div>
+        )}
       </div>
     </div>
   );
