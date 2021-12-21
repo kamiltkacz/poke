@@ -18,7 +18,7 @@ export default function Pokes() {
     <div
       className="info-div">
       <div className="img-div">
-        <img src={pokemon.img} alt="" style={{ transform: "scale(1.5)" }} />
+        <img src={pokemon.img} alt="" style={{ transform: "scale(1.2)" }} />
       </div>{" "}
       <div className="num-div">
         <span className="hash-span">#</span>
@@ -32,7 +32,9 @@ export default function Pokes() {
         <div className="type-two">
           <span className="type-two-span">{pokemon.type[1]}</span>
         </div>
+
       </div>
+
     </div>
   ));
 
