@@ -1,6 +1,6 @@
 import "./Styles.css";
 import Pokes from "./GetPokemon.js";
-import SearchBar from "./Components/SearchBar";
+import SearchBar from "./SearchBar";
 import PokesData from "./Data.json";
 
 function App() {

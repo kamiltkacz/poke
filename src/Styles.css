@@ -35,10 +35,15 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0px 85px 40px 37px;
-  margin-right: 100px;
+  margin-right: 130px;
   margin-top: 52px;
   background: repeating-linear-gradient(
-    -45deg, #f7f7f7, #f3f3f7 8px, #fdfdfd 8px, #ffffff 40px );
+    125deg,
+    #dcd9d9,
+    #f3f3f7 5px,
+    #ffffff 21px,
+    #ffffff 39px
+  );
 }
 
 .info-div {
@@ -81,7 +86,7 @@
 
 .img-div {
   background: whitesmoke;
-  width: 20vw;
+  width: 91%;
   height: 23vh;
   justify-content: center;
   align-items: center;
@@ -89,7 +94,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: rgb(0 0 0 / 19%) 0px 1px 2px, rgb(0 0 0 / 23%) 0px 1px 12px;
+  box-shadow: rgb(0 0 0 / 19%) 0px 1px 2px, rgb(0 0 0 / 23%) 10px 0px 7px;
 }
 
 .num-div {
@@ -97,10 +102,10 @@
   margin-top: -18px;
   padding-bottom: 17px;
   background: white;
-  width: 39%;
+  width: 60%;
   z-index: 99999;
   position: relative;
-
+  color: grey;
   transform: rotateX(27deg);
   clip-path: polygon(0 0, 89% 0, 100% 76%, 0 63%);
 }
@@ -123,10 +128,9 @@
   background: violet;
   border-radius: 5px;
   font-size: 1.5rem;
-
   margin: 1px;
   line-height: 1.5;
-
+  color: white;
   margin-left: 4px;
   position: relative;
 }
@@ -137,12 +141,46 @@
   font-weight: 500;
 }
 
-.wrapper-div {
-  width: 120%;
+.hash-span {
+  padding-left: 5px;
+}
+
+/* Search Input */
+
+.searchInputs {
+  margin-top: 105px;
+  display: flex;
+}
+
+.search input {
+  background-color: white;
+  border: 5px solid grey;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 280px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search {
+  display: flex;
+
+  padding-left: 33px;
+  padding-bottom: 30px;
+}
+
+#loop-svg {
+  width: 5%;
+  margin-left: 34px;
+  z-index: 200;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
-
   .App-header {
     flex-direction: column;
     width: 100%;
@@ -153,8 +191,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-
-
   }
   .svg-div {
     width: 32%;
@@ -164,9 +200,17 @@
 
   .info-div {
     flex-basis: 300px;
+    padding-top: 40px;
   }
 
   .img-div {
     width: auto;
+  }
+  .search {
+    padding-left: 0px;
+  }
+  #loop-svg {
+    margin-right: -34px;
+    width: 13%;
   }
 }

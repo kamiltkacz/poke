@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SearchBar.css";
+
 
 function SearchBar({ placeholder }) {
   const [filteredData, setFilteredData] = useState([]);
