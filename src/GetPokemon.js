@@ -16,11 +16,9 @@ export default function Pokes() {
 
   let renderedOutput = pokemons.map((pokemon) => (
     <div
-      className="infodiv"
-      style={{ flex: 1, flexBasis: "25%", color: "black", background: "white" }}
-    >
+      className="info-div">
       <div className="img-div">
-        <img src={pokemon.img} alt="" style={{ transform: "scale(1.1)" }} />
+        <img src={pokemon.img} alt="" style={{ transform: "scale(1.5)" }} />
       </div>{" "}
       <div className="num-div">
         <span className="hash-span">#</span>
@@ -41,16 +39,7 @@ export default function Pokes() {
   return (
     <main>
       <div>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            paddingLeft: "40px",
-            paddingTop: "40px",
-            paddingRight: "80px",
-            marginRight: "100px",
-          }}
-        >
+        <div className="main-div">
           {renderedOutput}
         </div>
       </div>

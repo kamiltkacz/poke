@@ -57,13 +57,9 @@ function SearchBar({ placeholder }) {
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            style={{
-              width: "5%",
-              marginLeft: "34px",
-              zIndex: 200,
-              cursor: "pointer",
-            }}
+
             onClick={checkConsole}
+            id="loop-svg"
           >
             <path
               fill="currentColor"

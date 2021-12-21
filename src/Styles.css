@@ -17,7 +17,7 @@
 }
 
 .Header-poke {
-  background: linear-gradient(62deg, #f0f0 0%, #f7ce68 100%);
+  background: linear-gradient(62deg, #f0f0 0%, #9096dc 100%);
 
   color: black;
   width: 100%;
@@ -29,8 +29,24 @@
   font-weight: 500;
 }
 
+/* MAIN DIV */
+
+.main-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 85px 40px 37px;
+  margin-right: 100px;
+  margin-top: 52px;
+  background: repeating-linear-gradient(
+    -45deg, #f7f7f7, #f3f3f7 8px, #fdfdfd 8px, #ffffff 40px );
+}
+
 .info-div {
   background: linear-gradient(62deg, #f0f0 0%, #f7ce68 100%);
+  flex: 1;
+  flex-basis: 25%;
+  color: black;
+  background: white;
 }
 
 .search-div {
@@ -66,14 +82,14 @@
 .img-div {
   background: whitesmoke;
   width: 20vw;
-  height: 18vh;
+  height: 23vh;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 47px;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  transform: scale(1.06);
+  box-shadow: rgb(0 0 0 / 19%) 0px 1px 2px, rgb(0 0 0 / 23%) 0px 1px 12px;
 }
 
 .num-div {
@@ -126,9 +142,31 @@
 }
 
 @media (max-width: 600px) {
+
   .App-header {
     flex-direction: column;
     width: 100%;
     height: 100%;
+  }
+
+  .main-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+
+  }
+  .svg-div {
+    width: 32%;
+    margin-left: -16px;
+    margin-right: 77px;
+  }
+
+  .info-div {
+    flex-basis: 300px;
+  }
+
+  .img-div {
+    width: auto;
   }
 }

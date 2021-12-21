@@ -23,3 +23,31 @@ input:focus {
   padding-left: 33px;
   padding-bottom: 30px;
 }
+
+#loop-svg {
+
+    width: 5%;
+    margin-left: 34px;
+    z-index: 200;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .search {
+
+    padding-left: 0px;
+
+  }
+  #loop-svg {
+
+    margin-right: -23px;
+    width: 13%;
+
+
+  }
+}
