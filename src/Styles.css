@@ -135,11 +135,6 @@
   position: relative;
 }
 
-.type-two-span {
-
-  margin: 5px;
-}
-
 .name-span {
   display: flex;
   font-size: 2.2rem;
@@ -193,7 +188,6 @@ input:focus {
   z-index: 11111;
   position: relative;
   flex-wrap: wrap;
-
 }
 
 .dataResult::-webkit-scrollbar {
@@ -211,7 +205,6 @@ input:focus {
 .dataItem p {
   margin-left: 10px;
 }
-
 
 /* End Serach Input */
 
@@ -238,7 +231,6 @@ input:focus {
   z-index: 999999;
   animation: wiggle 0.5s;
   animation-iteration-count: 6;
-
 }
 
 .dataResultTwo::-webkit-scrollbar {
@@ -280,7 +272,6 @@ input:focus {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-
 
 @media (max-width: 915px) {
   svg {
