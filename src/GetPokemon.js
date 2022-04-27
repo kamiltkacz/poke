@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 export default function Pokes() {
-  const [pokemonData, setPokemonData] = React.useState({});
+  const [pokemonData, setPokemonData] = useState({});
 
   useEffect(() => {
     fetch(
