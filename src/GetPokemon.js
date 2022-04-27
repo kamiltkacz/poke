@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 export default function Pokes() {
   const [pokemonData, setPokemonData] = React.useState({});
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch(
       "https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json"
     )
